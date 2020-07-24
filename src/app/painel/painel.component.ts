@@ -51,7 +51,7 @@ export class PainelComponent implements OnInit {
 
       //
       if(this.rodada === 4) {
-        this.encerrarJogo.emit('Vitória!')
+        this.encerrarJogo.emit('vitoria')
       }
 
       //atualiza o objeto rodadaFrase
@@ -62,7 +62,7 @@ export class PainelComponent implements OnInit {
       this.tentativas--
 
       if(this.tentativas === -1) {
-        this.encerrarJogo.emit('Derrota!')
+        this.encerrarJogo.emit('derrota')
       }
     }
   }
